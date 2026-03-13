@@ -9,5 +9,20 @@ class Dispositivos
     public double promediorendimiento ()
     { return (rendimiento1+ rendimiento2 + rendimiento3)/3;  }
 
+    public string resultado()
+    {
+        if(promediorendimiento() >= 80)
+        {
+            return "Excelente";
+        }
+        else if (promediorendimiento() >= 60)
+        {
+            return "Bueno";
+        }
+        else
+        {
+            return "Malo";
+        }
+    }
 
 }
