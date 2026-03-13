@@ -27,3 +27,15 @@ class Dispositivos
     }
 
 }
+
+List<Dispositivos> dispositivos = new List<Dispositivos>();
+Console.WriteLine("Ingrese cuantos dispositivos desea evaluar:");
+int n=int.Parse(Console.ReadLine());
+
+for (int i = 0; i < n; i++)
+{
+    Dispositivos e = new Dispositivos();
+    Console.WriteLine($"\nDispositivo {i+1}:");
+    Console.WriteLine("Nombre"); e.Nombre = Console.ReadLine();
+    dispositivos.Add(e);
+}
