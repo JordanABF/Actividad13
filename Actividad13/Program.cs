@@ -13,16 +13,17 @@ class Dispositivos
     {
         if(promediorendimiento() >= 80)
         {
-            return "Excelente";
-        }
-        else if (promediorendimiento() >= 60)
-        {
-            return "Bueno";
+            return "Excelentes condiciones";
         }
         else
         {
-            return "Malo";
+            return "Necesita mantenimiento";
         }
+    }
+
+    public void mostrarresultado()
+    {
+        Console.WriteLine($"El dispositivo {Nombre} tiene un rendimiento promedio de {promediorendimiento():F2} y se encuentra en {resultado()}");
     }
 
 }
